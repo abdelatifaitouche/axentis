@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+html,
+body {
+    width: 100%;
+    background: black;
+    /* Pure deep space black - clean transition */    /* Solid dark slate that matches the space darkness */    /* Multi-stop gradient mimicking atmospheric layers */
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
