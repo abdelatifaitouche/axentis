@@ -84,7 +84,7 @@ const Hero = () => {
     parallaxTimeline
       .to(".hero-background", {
         yPercent: 50,
-        scale: 1.3,
+        scale: 1.1,
         ease: "none",
       })
       .to(
@@ -154,7 +154,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 hero-background will-change-transform"
         style={{
-          backgroundImage: "url('/assets/images/space_bg.jpg')",
+          backgroundImage: "url('/assets/images/new_bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
@@ -174,20 +174,26 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10  text-white px-6 md:px-12 max-w-4xl mx-auto hero-content will-change-transform">
-        <h1 className="hero-title text-4xl md:text-6xl font-medium mb-4 leading-tight text-white">
-          Empowering Your Future
+      <div className="relative z-10 text-white px-6 md:px-12 max-w-4xl mx-auto hero-content will-change-transform">
+        <h1 className="hero-title text-5xl md:text-7xl font-medium mb-6 leading-15 text-white">
+          Unlock your business potential
         </h1>
         
-        <p className="hero-subtitle text-lg md:text-xl max-w-2xl mb-8 leading-relaxed font-light text-gray-200">
+        <p className="hero-subtitle text-lg md:text-xl max-w-2xl mb-8 leading-5 font-light text-gray-200">
           Axentis Consulting delivers strategic solutions to drive your business
           forward with expertise, innovation, and trust.
         </p>
         
-        <div className="hero-cta">
+        <div className="hero-cta flex gap-2">
+        <a
+            href="#contact"
+            className="inline-block bg-white/5 backdrop-blur-md text-white px-8 py-3 rounded-md text-lg uppercase tracking-wider font-thin hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
+          >
+            Chat now
+          </a>
           <a
             href="#contact"
-            className="inline-block bg-white text-black px-8 py-3 rounded-md text-lg uppercase tracking-wider font-medium hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
+            className="inline-block bg-white text-black px-8 py-3 rounded-md text-lg uppercase tracking-wider font-thin hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
           >
             Get Started
           </a>

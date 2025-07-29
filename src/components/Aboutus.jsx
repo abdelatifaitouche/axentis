@@ -318,7 +318,7 @@ const AboutUs = () => {
           {/* Section Title with reveal effect */}
           <div className="reveal-item mb-8">
             <h2 className="text-5xl md:text-7xl font-bold tracking-tight bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
-              About Axentis
+              Who we are 
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full"></div>
           </div>

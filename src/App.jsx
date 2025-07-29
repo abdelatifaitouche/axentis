@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-  <main className='w-full overflow-x-hidden'>
+  <main className='w-full overflow-x-hidden bg-gradient-to-b from-black via-gray-900/50 to-black'>
     <Navbar/>
     <Hero/>
     <AboutUs/>

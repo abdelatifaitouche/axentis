@@ -16,6 +16,7 @@ const Navbar = () => {
     { title: "Partners", id: "partners", href: "#partners" },
   ];
 
+  /*
   useGSAP(() => {
     // Simple blur and transparency on scroll
     const navTween = gsap.timeline({
@@ -45,11 +46,10 @@ const Navbar = () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, []);
-
+*/
   return (
     <nav 
-      className="navbar fixed top-0 left-0 w-full z-50 text-white font-sans transition-all duration-300 ease-out" 
-      role="navigation"
+    className="navbar fixed top-3 left-6 right-6 rounded-3xl bg-white/5 backdrop-blur-md  z-50 text-white font-sans transition-all duration-300 ease-out shadow-lg" role="navigation"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
         {/* Enhanced Logo */}
@@ -68,7 +68,7 @@ const Navbar = () => {
             <li key={item.id}>
               <a
                 href={item.href}
-                className="relative px-4 py-2 text-sm font-medium tracking-wide hover:text-white transition-all duration-300 group rounded-lg hover:bg-white/10"
+                className="relative px-4 py-2 text-sm font-thin tracking-wide hover:text-white transition-all duration-300 group rounded-lg hover:bg-white/10"
               >
                 {item.title}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-white to-gray-300 transition-all duration-300 group-hover:w-full rounded-full"></span>
@@ -77,10 +77,12 @@ const Navbar = () => {
           ))}
           
           {/* Enhanced CTA Button */}
-          <li className="ml-4">
+          
+        </ul>
+       
             <a
               href="#contact"
-              className="relative inline-flex items-center justify-center bg-white/90 backdrop-blur-sm text-black px-6 py-2.5 rounded-md text-sm font-semibold tracking-wide hover:bg-white hover:shadow-lg hover:shadow-white/25 transition-all duration-300 transform hover:scale-105 border border-white/20"
+              className="relative inline-flex items-center justify-center bg-white/90 backdrop-blur-sm text-black px-6 py-2.5 rounded-md text-sm font-md tracking-wide hover:bg-white hover:shadow-lg hover:shadow-white/25 transition-all duration-300 transform hover:scale-105 border border-white/20"
             >
               Contact Us
               <svg 
@@ -92,8 +94,7 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-          </li>
-        </ul>
+          
 
         {/* Modern Hamburger Menu */}
         <button
